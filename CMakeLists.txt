@@ -19,14 +19,10 @@ add_definitions(-DPM_DIR="${CMAKE_HOME_DIRECTORY}")
 set(CMAKE_MODULE_PATH "${CMAKE_HOME_DIRECTORY}/cmake_module")
 
 find_package(DART REQUIRED COMPONENTS gui collision-bullet CONFIG)	
-find_package(Boost 1.69 EXACT COMPONENTS filesystem python36 numpy36 program_options)
-IF(NOT Boost_FOUND)
-	find_package(Boost 1.69 EXACT COMPONENTS filesystem python38 numpy38 program_options)
-ENDIF()
+find_package(Boost 1.69 EXACT COMPONENTS filesystem python38 numpy38 program_options)
 
-find_package(PythonLibs 3.6 REQUIRED)
-find_package(PythonInterp 3.6 REQUIRED)
-find_package(PythonLibs REQUIRED)
+find_package(PythonInterp 3.8 REQUIRED)
+find_package(PythonLibs 3.8 REQUIRED)
 find_package(TinyXML2 REQUIRED)
 
 add_subdirectory( sim )

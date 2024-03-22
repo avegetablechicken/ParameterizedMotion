@@ -9,5 +9,7 @@ cmake -DCMAKE_BUILD_TYPE=Release \
       -DFCL_LIBRARIES=$CENVDIR/lib/libfcl.so \
       -DCCD_INCLUDE_DIRS=$CENVDIR/include/ccd \
       -DCCD_LIBRARIES=$CENVDIR/lib/libccd.so \
+      -DPYTHON_LIBRARY=$(python3-config --prefix)/lib/libpython3.8.so \
+      -DPYTHON_INCLUDE_DIR=$(python3-config --prefix)/include/python3.8 \
       ..
 cd ..
