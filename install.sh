@@ -45,7 +45,7 @@ install_library() {
 }
 install_boost() {
 	cd $ENVDIR/src
-  wget https://dl.bintray.com/boostorg/release/1.69.0/source/boost_1_69_0.tar.gz
+  wget https://boostorg.jfrog.io/artifactory/main/release/1.69.0/source/boost_1_69_0.tar.gz
   tar -xzf ./boost_1_69_0.tar.gz
   rm ./boost_1_69_0.tar.gz
   cd ./boost_1_69_0
